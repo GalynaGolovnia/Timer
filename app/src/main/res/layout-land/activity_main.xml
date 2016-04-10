@@ -1,0 +1,48 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pause"
+        android:src="@drawable/pause"
+        android:background="@color/backgroundColor"
+        android:onClick="onClick"
+
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/imageBottom"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ClockView"
+        android:textColor="@color/clockColor"
+        android:textSize="@dimen/clockView"
+        android:id="@+id/textView"
+
+        android:layout_centerInParent="true"
+        />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toogle_selector"
+        android:textOff=""
+        android:textOn=""
+
+        android:id="@+id/toggleButton"
+        android:layout_marginTop="@dimen/marginToggleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        />
+
+
+
+</RelativeLayout>

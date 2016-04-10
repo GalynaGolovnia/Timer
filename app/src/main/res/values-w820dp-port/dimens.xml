@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="clockView">120sp</dimen>
+    <dimen name="marginToggleButton">60dp</dimen>
+    <dimen name="imageBottom">-50dp</dimen>
+    <dimen name="selectTimeView">120sp</dimen>
+    <dimen name="editTextSecondsMargin">60dp</dimen>
+    <dimen name="PlusMinusSize">40sp</dimen>
+</resources>

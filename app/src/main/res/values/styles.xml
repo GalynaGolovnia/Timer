@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+            </style>
+    <style name="Timer" parent="AppTheme">
+        <item name="android:textColor">#fffff9fc</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.galyna.timer.SelectTime"
+    android:background="@color/backgroundColor">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/centerLayout"
+        android:layout_alignTop="@+id/centerLayout"
+        android:layout_marginRight="@dimen/editTextSecondsMargin"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hours"
+            android:id="@+id/textHour"
+android:textSize="20dp"
+            style="@style/Timer"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:textSize="@dimen/PlusMinusSize"
+            android:id="@+id/bHourPlus"
+            android:onClick="onClick"
+            android:layout_gravity="center"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editTextStart"
+            android:id="@+id/editTextHour"
+            android:textSize="@dimen/selectTimeView"
+            style="@style/Timer"
+             />
+        <Button
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:textSize="@dimen/PlusMinusSize"
+            android:onClick="onClick"
+            android:id="@+id/bHourMinus"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/centerLayout"
+        >
+    <TextView
+        style="@style/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes"
+        android:id="@+id/textMinutes"
+
+        android:textSize="20dp"
+
+
+        />
+
+
+
+
+
+    <Button
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:textSize="@dimen/PlusMinusSize"
+        android:onClick="onClick"
+        android:id="@+id/bMinutesPlus"
+        android:layout_gravity="center"
+
+
+       />
+
+
+    <TextView
+        style="@style/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editTextStart"
+        android:id="@+id/editTextMinutes"
+        android:textSize="@dimen/selectTimeView"
+
+
+        />
+    <Button
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:onClick="onClick"
+        android:textSize="@dimen/PlusMinusSize"
+        android:id="@+id/bMinutesMinus"
+        android:layout_gravity="center"
+
+
+        />
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ok"
+        android:id="@+id/Ok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45dp"
+        android:onClick="onClick"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/centerLayout"
+        android:layout_alignTop="@+id/centerLayout"
+        android:layout_marginLeft="@dimen/editTextSecondsMargin">
+        <TextView
+            style="@style/Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:id="@+id/textSeconds"
+
+            android:textSize="20dp"
+                        />
+        <Button
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/PlusMinusSize"
+            android:text="@string/plus"
+            android:onClick="onClick"
+            android:id="@+id/bSecondsPlus"
+            android:layout_gravity="center"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editTextStart"
+            android:id="@+id/editTextSeconds"
+            android:textSize="@dimen/selectTimeView"
+            style="@style/Timer"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:onClick="onClick"
+            android:textSize="@dimen/PlusMinusSize"
+            android:id="@+id/bSecondsMinus"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
